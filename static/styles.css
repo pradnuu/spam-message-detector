@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform: translateY(20px);}
+    to{opacity:1; transform: translateY(0);}
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description{
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+textarea:focus{
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+.my-cta-button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.my-cta-button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* RESULT PAGE */
+.results{
+    text-align: center;
+}
+
+.safe{
+    color: green;
+    font-size: 28px;
+}
+
+.danger{
+    color: red;
+    font-size: 28px;
+}
+
+a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #667eea;
+    font-weight: bold;
+}
